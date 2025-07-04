@@ -96,10 +96,4 @@ parking-management-system/
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Create a Pull Request
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For questions or issues, please open an issue on the GitHub repository or contact the development team.
