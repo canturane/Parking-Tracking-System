@@ -1,32 +1,105 @@
-# Otopark Yönetim Sistemi
+# Parking Management System
 
-Bu proje, **araç giriş-çıkışlarını otomatik algılama** ve **otopark yönetimini** tamamen dijitalleştirme amacını taşır. Kamera görüntüsü üzerinden araç ve plaka tanıma (YOLO + EasyOCR) yapılır; kullanıcılar ise Django tabanlı web arayüzü üzerinden rezervasyon, ödeme ve bakiye işlemlerini yönetebilir.
+This project aims to **automatically detect vehicle entry and exit** and **fully digitize parking management**. Vehicle and license plate recognition (YOLO + EasyOCR) is performed through camera footage, while users can manage reservations, payments, and balance operations through a Django-based web interface.
 
-## Özellikler
+## Features
 
-- **Araç Algılama ve Plaka Tanıma**  
-  - YOLO ile araç tespiti  
-  - EasyOCR ile plaka okuma  
-  - Geçerli plakaların SQLite veritabanında kaydı
+### 🚗 Vehicle Detection and License Plate Recognition
+- Vehicle detection using YOLO
+- License plate reading with EasyOCR
+- Valid license plates stored in SQLite database
 
-- **Rezervasyon ve Ödeme Yönetimi**  
-  - Web arayüzü üzerinden rezervasyon oluşturma, düzenleme ve silme  
-  - Otopark ücret hesaplama (süre bazlı)  
-  - Kullanıcı bakiyesi ve ödeme işlemleri
+### 📅 Reservation and Payment Management
+- Create, edit, and delete reservations through web interface
+- Parking fee calculation (time-based)
+- User balance and payment processing
 
-- **Veritabanı Entegrasyonu (SQLite)**  
-  - Giriş/çıkış bilgileri ve ücretlendirme kayıt altına alınır  
-  - Kullanıcı, rezervasyon ve ödeme bilgileri tek noktada toplanır
+### 💾 Database Integration (SQLite)
+- Entry/exit information and billing records are stored
+- User, reservation, and payment information centralized in one place
 
-## Kurulum ve Kullanım
+## Installation
 
-1. Proje dosyalarını indirin ve gereksinimleri yükleyin.  
-2. Django migrate işlemlerini tamamlayın ve sunucuyu başlatın.  
-3. Tarayıcıda yerel sunucu adresine (ör. `http://127.0.0.1:8000/`) giderek kayıt veya giriş yapın.  
-4. Otopark rezervasyonlarınızı yönetin, plaka bilgilerinizle ödeme durumunuzu takip edin.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd parking-management-system
+```
 
-## Test ve Doğrulama
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-- **Pytest** veya Django test komutları ile projeyi test edebilirsiniz.  
-- Araç ve plaka tanıma ile rezervasyon, ödeme gibi kritik fonksiyonların işlevselliği kontrol edilir.
+3. Run Django migrations:
+```bash
+python manage.py migrate
+```
 
+4. Start the development server:
+```bash
+python manage.py runserver
+```
+
+## Usage
+
+1. Navigate to the local server address (e.g., `http://127.0.0.1:8000/`) in your browser
+2. Register or log in to your account
+3. Manage your parking reservations
+4. Track payment status with your license plate information
+
+## Testing and Validation
+
+- Test the project using **Pytest** or Django test commands:
+```bash
+python manage.py test
+```
+
+- Critical functionality including vehicle and license plate recognition, reservations, and payments are verified for proper operation
+
+## Technology Stack
+
+- **Backend**: Django (Python)
+- **Computer Vision**: YOLO, EasyOCR
+- **Database**: SQLite
+- **Frontend**: Django Templates
+- **Testing**: Pytest, Django Testing Framework
+
+## Project Structure
+
+```
+parking-management-system/
+├── manage.py
+├── requirements.txt
+├── parking_system/
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── detection/
+│   ├── models.py
+│   ├── views.py
+│   └── utils.py
+├── reservations/
+│   ├── models.py
+│   ├── views.py
+│   └── templates/
+└── tests/
+    ├── test_detection.py
+    └── test_reservations.py
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For questions or issues, please open an issue on the GitHub repository or contact the development team.
