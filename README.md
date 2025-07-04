@@ -4,17 +4,17 @@ This project aims to **automatically detect vehicle entry and exit** and **fully
 
 ## Features
 
-### 🚗 Vehicle Detection and License Plate Recognition
+###  Vehicle Detection and License Plate Recognition
 - Vehicle detection using YOLO
 - License plate reading with EasyOCR
 - Valid license plates stored in SQLite database
 
-### 📅 Reservation and Payment Management
+###  Reservation and Payment Management
 - Create, edit, and delete reservations through web interface
 - Parking fee calculation (time-based)
 - User balance and payment processing
 
-### 💾 Database Integration (SQLite)
+###  Database Integration (SQLite)
 - Entry/exit information and billing records are stored
 - User, reservation, and payment information centralized in one place
 
