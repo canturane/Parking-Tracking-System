@@ -97,3 +97,17 @@ parking-management-system/
 5. Create a Pull Request
 
 
+### Dashboard
+<img width="1068" alt="Ekran görüntüsü 2025-07-04 163642" src="https://github.com/user-attachments/assets/ae7223ef-ca33-46dc-a71a-5658d53ac789" />
+*Ana kontrol paneli - rezervasyon ve ödeme durumu*
+
+### License Plate Detection
+<img width="201" alt="Ekran görüntüsü 2025-07-04 163350" src="https://github.com/user-attachments/assets/223d2c59-42d0-4195-a047-b56c29cd0a0b" />
+*Araç plaka tanıma sistemi çalışırken*
+
+### Payment Processing
+<img width="812" alt="Ekran görüntüsü 2025-07-04 163705" src="https://github.com/user-attachments/assets/5b4ec306-bca7-4530-9e7c-e7ce1dd9ec37" />
+*Ödeme işlemi ve bakiye yönetimi*
+
+
+
