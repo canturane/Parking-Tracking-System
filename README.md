@@ -65,29 +65,6 @@ python manage.py test
 - **Frontend**: Django Templates
 - **Testing**: Pytest, Django Testing Framework
 
-## Project Structure
-
-```
-parking-management-system/
-├── manage.py
-├── requirements.txt
-├── parking_system/
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── detection/
-│   ├── models.py
-│   ├── views.py
-│   └── utils.py
-├── reservations/
-│   ├── models.py
-│   ├── views.py
-│   └── templates/
-└── tests/
-    ├── test_detection.py
-    └── test_reservations.py
-```
-
 ## Contributing
 
 1. Fork the repository
